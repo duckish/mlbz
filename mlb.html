@@ -67,25 +67,34 @@
 									<h3>The team is <span class="color">:</span></h3>
 										<h2 style="color:Tomato;" id="mlb_team">NULL</h2>
 									</div>
-								<a href="#" class="btn btn-color" onclick="genMLB()">Gen MLB team</a> 
+
+									<div class="form-group">
+										<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+										<i class="input-icon uil uil-at"></i>
+									  </div>
+									  
+								<a href="#" class="btn btn-color" onclick="genMLB()">Gen MLB team</a>
+								<button type="button" id="btnOldMLB" class="button" onclick="get_old_mlb_match()">get old MLB teams</button>
+								<p id="old_mlb_teams"></p>
+         
 							</div>
 						</div>  
 						<br>
-							
+
 						 <div class="row">
 							<div class="col-md-6">
 								<img src="img/section-image-1.png" alt="">
 								<div class="space"></div>
 							</div>
 							<div class="col-md-6">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. adipisicing  sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium,m deserunt.</p>
-								<ul class="list-unstyled">
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum enimdolor sit amet</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Explicabo deleniti neque aliquid</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Consectetur adipisicing elit</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum dolor sit amet</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Quo issimos molest quibusdam temporibus</li>
-								</ul>
+								<p>Old MLB teams are:</p>
+								<ul class="lists"></ul>
+                                <template id="template">
+                                <li class="template-list">
+								  <i class="fa fa-arrow-circle-right pr-10 colored"></i> <a class="template-city"></a> <a class="vide"> : </a> <a class="template-country"></a>
+                                </li>
+                                </template>
+
 							</div>
 						</div>	
 						<br/> 
