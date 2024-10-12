@@ -5184,75 +5184,75 @@ function genWNBA() {
   document.getElementById('wnba_team').innerHTML = fruits;
 
 }
-function genNHL() {
+// function genNHL() {
 
-  ones = ['🤩', 'ANA', '💥', 'ARI', '💙',
-    '💋', 'BOS', 'BUF', '💯', 'WAS','🙉',
-    'CAL', '👨‍🦱', 'CAR', '💪', 'CHI',
-    '👍', 'CLB', '💣', 'COL', '💕',
-    'DAL', '😹', 'DET', '👁️‍🗨️', 'EDM',
-    '👹', 'FLA', '👻', 'LA','😱', 'MIN','👽',
-    '💯', 'MON','🙉','NAS', '😹','NJ', '🤩',
-    '💥', 'NYI','💙', 'NYR','💋', 'OTT','💯', 'PHI',
-    '👨‍🦱', 'PIT','💪', 'SEA','👍', 'SJ',
-    '💣', 'STL','💕', 'TB','👁️‍🗨️', 'TOR',
-    '👹', 'VAN','👻', 'VEG','😱', 'WIN']
+//   ones = ['🤩', 'ANA', '💥', 'ARI', '💙',
+//     '💋', 'BOS', 'BUF', '💯', 'WAS','🙉',
+//     'CAL', '👨‍🦱', 'CAR', '💪', 'CHI',
+//     '👍', 'CLB', '💣', 'COL', '💕',
+//     'DAL', '😹', 'DET', '👁️‍🗨️', 'EDM',
+//     '👹', 'FLA', '👻', 'LA','😱', 'MIN','👽',
+//     '💯', 'MON','🙉','NAS', '😹','NJ', '🤩',
+//     '💥', 'NYI','💙', 'NYR','💋', 'OTT','💯', 'PHI',
+//     '👨‍🦱', 'PIT','💪', 'SEA','👍', 'SJ',
+//     '💣', 'STL','💕', 'TB','👁️‍🗨️', 'TOR',
+//     '👹', 'VAN','👻', 'VEG','😱', 'WIN']
   
-  twos = ['ANA-99','😹','ARI-99','💕','BOS-99','👍','BUF-99','👻','CAL-99',
-          'CAR-99','🙉','CHI-99','💪','CLB-99','💣','COL-99','💋','DAL-99',
-          'DET-99','💯','EDM-99','👁️‍🗨️','FLA-99','💥','LA-99','MIN-99',
-          'MON-99','NAS-99','💯','NJ-99','💣','NYI-99','💥','NYR-99',
-          'OTT-99','💯','PHI-99','🤩','PIT-99','🤩','SEA-99','👽','SJ-99',
-          'STL-99','💥','TB-99','💣','TOR-99','👁️‍🗨️','VAN-99','💋','VEG-99',
-          'WAS-99','👁️‍🗨️','WIN-99']
+//   twos = ['ANA-99','😹','ARI-99','💕','BOS-99','👍','BUF-99','👻','CAL-99',
+//           'CAR-99','🙉','CHI-99','💪','CLB-99','💣','COL-99','💋','DAL-99',
+//           'DET-99','💯','EDM-99','👁️‍🗨️','FLA-99','💥','LA-99','MIN-99',
+//           'MON-99','NAS-99','💯','NJ-99','💣','NYI-99','💥','NYR-99',
+//           'OTT-99','💯','PHI-99','🤩','PIT-99','🤩','SEA-99','👽','SJ-99',
+//           'STL-99','💥','TB-99','💣','TOR-99','👁️‍🗨️','VAN-99','💋','VEG-99',
+//           'WAS-99','👁️‍🗨️','WIN-99']
 
   
 
-  const fruits = [];
+//   const fruits = [];
 
-  for (let i = 0; i < 50; i++) {
-      var ran_int = int_list[Math.floor(Math.random()*int_list.length)];
-      var ran_ani = animals[Math.floor(Math.random()*animals.length)];
-      console.log(ran_ani+ran_int);
+//   for (let i = 0; i < 50; i++) {
+//       var ran_int = int_list[Math.floor(Math.random()*int_list.length)];
+//       var ran_ani = animals[Math.floor(Math.random()*animals.length)];
+//       console.log(ran_ani+ran_int);
 
-      ran_num = ran_ani+ran_int;
+//       ran_num = ran_ani+ran_int;
 
-      json_data[ran_num]
+//       json_data[ran_num]
 
-      if (json_data[ran_num] % 2 == 0) {
-          fruits.push(ones[Math.floor(Math.random()*ones.length)]);
-      }
+//       if (json_data[ran_num] % 2 == 0) {
+//           fruits.push(ones[Math.floor(Math.random()*ones.length)]);
+//       }
 
-      if (json_data[ran_num] % 2 == 1) {
-              fruits.push(twos[Math.floor(Math.random()*twos.length)]);
-          }
+//       if (json_data[ran_num] % 2 == 1) {
+//               fruits.push(twos[Math.floor(Math.random()*twos.length)]);
+//           }
       
-    }
+//     }
 
 
-    for (let i = 0; i < 49; i++) {
-      var ran_int = int_list[Math.floor(Math.random()*int_list.length)];
-      var ran_ani = animals[Math.floor(Math.random()*animals.length)];
-      console.log(ran_ani+ran_int);
+//     for (let i = 0; i < 49; i++) {
+//       var ran_int = int_list[Math.floor(Math.random()*int_list.length)];
+//       var ran_ani = animals[Math.floor(Math.random()*animals.length)];
+//       console.log(ran_ani+ran_int);
 
-      ran_num = ran_ani+ran_int;
+//       ran_num = ran_ani+ran_int;
 
-      json_data[ran_num]
+//       json_data[ran_num]
 
-      if (json_data[ran_num] % 2 == 0) {
-          fruits.pop();
-      }
+//       if (json_data[ran_num] % 2 == 0) {
+//           fruits.pop();
+//       }
 
-      if (json_data[ran_num] % 2 == 1) {
-              fruits.shift();
-          }
+//       if (json_data[ran_num] % 2 == 1) {
+//               fruits.shift();
+//           }
       
-    }
+//     }
   
-  //alert(fruits)
-  document.getElementById('nhl_team').innerHTML = fruits;
+//   //alert(fruits)
+//   document.getElementById('nhl_team').innerHTML = fruits;
          
-}
+// }
 
 function genNBA() {
   ones = ['🤩', 'Boston Celtics', '💥', 'Brooklyn Nets', '💙',
